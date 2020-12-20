@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/dkovalishyn/ngQuote/compare/v0.0.1...v0.0.2) (2020-12-20)
+
+
+### Bug Fixes
+
+* do not deploy coverage to code-climate ([a4ae039](https://github.com/dkovalishyn/ngQuote/commit/a4ae039faacd31134396be4c63f0d2443393e203))
+
 ### [0.0.1](https://github.com/dkovalishyn/ngQuote/compare/v0.0.0...v0.0.1) (2020-12-20)
 
 
