@@ -4,7 +4,7 @@ env:
   variables:
     CACHE_CONTROL: 86400
     BUILD_ENV: test
-    S3_BUCKET: quote-app-prod
+    # S3_BUCKET: quote-app-prod
     GIT_BRANCH: master
     CI_NAME: CodeBuild
     # CLOUDFRONT_ID: ""
@@ -38,9 +38,9 @@ phases:
       # Set up all required/necessary env variables and Install CodeClimate reporter.
       - export GIT_COMMIT_SHA="$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION)"
       - export GIT_COMMITTED_AT="$(date +%s)"
-      - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-      - chmod +x ./cc-test-reporter
-      - ./cc-test-reporter before-build
+#      - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+#      - chmod +x ./cc-test-reporter
+#      - ./cc-test-reporter before-build
 
   pre_build:
     commands:
